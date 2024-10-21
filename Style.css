@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans";
+  box-sizing: border-box;
+  color: white;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+#miniCircle {
+  opacity: 100;
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  position: sticky;
+  width: 15px;
+  aspect-ratio: 1;
+  z-index: 50;
+  background: #fff;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+}
+#main {
+  width: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+#heading {
+  margin-top: 50px;
+}
+#heading h1 {
+  margin-left: 30px;
+  line-height: 0.9;
+  opacity: 0.6;
+  font-size: 11vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: -5px;
+}
+#heading #secondh1 {
+  margin-left: 170px;
+}
+.blocktext {
+  width: fit-content;
+}
+.blocktext h5 {
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: max(1vw, 20px);
+}
+#subheading {
+  margin-top: 100px;
+  padding-right: 30px;
+}
+#subheading h5 {
+  text-align: right;
+  margin-top: 8px;
+  font-size: max(1vw, 20px);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#herofotter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 2%;
+  padding: 0 2vw;
+}
+#herofotter a {
+  text-decoration: none;
+  font-size: max(1vw, 20px);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#herofotter #iconset {
+  display: flex;
+  gap: 5px;
+}
+#herofotter .circle {
+  width: 25px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #777;
+  border-radius: 50%;
+}
+#second {
+  padding-top: 150px;
+  padding-right: 10vw;
+  width: 100%;
+}
+.bounding {
+  height: fit-content;
+  overflow: hidden;
+}
+.elem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3vw 2vw;
+  border-top: 1px solid #888;
+  padding-right: 0;
+  z-index: 50;
+}
+.elem h1 {
+  text-transform: uppercase;
+  font-size: 7vw;
+  opacity: 50%;
+  font-weight: 500;
+  margin-bottom: 1vw;
+  z-index: 20;
+}
+.elem:last-child {
+  border-bottom: 1px solid #888;
+}
+.elem img {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+  width: 250px;
+  aspect-ratio: 1;
+  background-position: center;
+}
+
+button {
+  padding: 0.4rem 0.7rem;
+  border-radius: 30px;
+  margin-left: 2vw;
+  background: #000;
+  border: 1px solid #fff;
+  outline: none;
+  font-weight: 500;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+#about {
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15vw;
+  padding-right: 50px;
+  padding-top: 150px;
+  gap: 90px;
+}
+#about button {
+  margin-left: 0;
+  width: 90px;
+}
+#about img {
+  max-width: 220px;
+  width: 30vw;
+}
+#abouttext {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+}
+#abouttext h1 {
+  opacity: 50%;
+}
+#abouttext h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#ytLink {
+  display: flex;
+  flex-flow: column;
+  height: 10vh;
+  padding-left: 2vw;
+}
+
+#ytLink h5 {
+  opacity: 50%;
+  font-weight: 500;
+}
+#ytLink a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+#fotter {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fotterContent1 {
+  display: flex;
+  align-items: center;
+  padding: 0 2vh;
+  gap: 3vw;
+}
+.fotterContent2 {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  padding-right: 2vw;
+}
+.fotterContent2 a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
