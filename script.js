@@ -45,7 +45,7 @@ function firstPageAnimation() {
     });
 }
 
-const updateCirclePosition = (xScale, yScale) => {
+const updateCirclePosition = (xScale, yScale, scrollY) => {
   const translateY = lastMouseY + scrollY - 5; // Adjust for the -5 offset
   circle.style.transform = `translate(${
     lastMouseX - 5
@@ -57,16 +57,17 @@ window.addEventListener("mousemove", (e) => {
   let xScale = gsap.utils.clamp(0.6, 1.2, e.clientX - lastMouseX);
   let yScale = gsap.utils.clamp(0.6, 1.2, e.clientY - lastMouseY);
 
-  updateCirclePosition(xScale, yScale);
+  updateCirclePosition(xScale, yScale, scrollY);
 
   lastMouseX = e.clientX;
   lastMouseY = e.clientY;
   timeout = setTimeout(() => {
-    updateCirclePosition(1, 1);
+    updateCirclePosition(1, 1, scrollY);
   }, 100);
 });
 window.addEventListener("scroll", () => {
   scrollY = window.scrollY;
+  updateCirclePosition(1, 1, scrollY);
 });
 requestAnimationFrame(updateCirclePosition);
 
@@ -78,7 +79,6 @@ document.querySelectorAll(".elem").forEach((elem) => {
     var diff = dets.clientY - elem.getBoundingClientRect().top;
     diffrot = dets.clientX - rotate;
     rotate = dets.clientX;
-    console.log("done");
 
     gsap.to(elem.querySelector("img"), {
       opacity: 1,
