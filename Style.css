@@ -242,6 +242,9 @@ button:hover {
   font-weight: 600;
 }
 @media (max-width: 600px) {
+  #miniCircle {
+    display: none;
+  }
   #about {
     flex-direction: column;
   }
