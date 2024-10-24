@@ -8,8 +8,9 @@
 html,
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100svh;
 }
+
 #miniCircle {
   opacity: 0;
   transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
@@ -239,4 +240,25 @@ button:hover {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
+}
+@media (max-width: 600px) {
+  #about {
+    flex-direction: column;
+  }
+  #abouttext {
+    width: 80vw;
+  }
+  #herofotter a {
+    font-size: 1rem;
+  }
+  .fotterContent1 {
+    font-size: 0.8rem;
+    gap: 10px;
+    padding: 0;
+  }
+  .fotterContent2 a {
+    font-size: 0.8rem;
+    gap: 10px;
+    padding: 0;
+  }
 }
