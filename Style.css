@@ -138,9 +138,7 @@ nav a {
   margin-bottom: 1vw;
   z-index: 20;
 }
-.elem:last-child {
-  border-bottom: 1px solid #888;
-}
+
 .elem img {
   display: none;
   opacity: 0;
@@ -149,6 +147,10 @@ nav a {
   width: 250px;
   aspect-ratio: 1;
   background-position: center;
+}
+#second > :nth-last-child(2) {
+  border-bottom: 1px solid #888;
+  margin-bottom: 50px;
 }
 
 button {
