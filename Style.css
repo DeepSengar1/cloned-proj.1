@@ -120,6 +120,7 @@ nav a {
 }
 .elem {
   position: relative;
+  height: max(20vh, 200px);
   display: flex;
   align-items: center;
   justify-content: space-between;
